@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+<title>Austin Pacharz Data Science</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-family: "Nanum Gothic Coding";
+}
+
+header h3 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-family: "Nanum Gothic Coding";
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 10px;
+  font-size: 12px;
+  font-family: "Nanum Gothic";
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  margin-top: 10px;
+  float: left;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+nav li a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: "Nanum Gothic";
+}
+
+.about {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+  font-family: "Nanum Gothic";
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Austin Pacharz</h2>
+  <h3>Data Science Portfolio</h3>
+</header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#schoolfunding">Comparing School Funding</a></li>
+      <li><a href="#volcanoes">Volcanoes on Venus</a></li>
+      <li><a href="#math">Math Symbol Detection</a></li>
+      <li><a href="#mystory">My Story</a></li>
+      <li><a href="#">Resume</a></li>
+    </ul>
+  </nav>
+
+<section>
+  <article id="schoolfunding">
+    <h1>Comparing School Funding</h1>
+    <p>Using A/B testing, I compared school revenue and expense for Denver Metro districts as well as rural vs. non-rural Colorado school districts.</p>
+    <a href="#">GitHub Repository</a>
+  </article>
+
+  <article id="volcanoes">
+    <h1>Volcanoes on Venus</h1>
+    <p>Using supervised learning techniques including Logistic Regression and Random Forest to classify images as containing volcanoes or not.</p>
+    <a href="#">GitHub Repository</a>
+  </article>
+
+  <article id="math">
+    <h1>Math Symbol Detection</h1>
+    <p>Using unsupervised learning techniques including t-SNE and UMAP to cluster images of mathematical symbols and digits.</p>
+    <a href="#">GitHub Repository</a>
+  </article>
+</section>
+
+<div class="about" id="mystory">
+  <h1>My Story</h1>
+  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
